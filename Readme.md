@@ -19,6 +19,7 @@ extension=zip
 extension=fileinfo 
 extension=mysqli 
 extension=pdo_mysql
+extension=intl
 and
 set allow_url_include = On 
 
@@ -44,7 +45,9 @@ https://documentation.ubuntu.com/server/how-to/web-services/install-php/index.ht
 sudo apt install php libapache2-mod-php
 sudo apt install php-cli
 sudo apt install php-mysql
-sudo apt-get install php-dom
+sudo apt install php-dom
+sudo apt install php-intl
+sudo apt install php-mbstring
 
 sudo systemctl restart apache2.service 
 

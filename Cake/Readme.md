@@ -1,8 +1,7 @@
 ### Create the project
-
 composer create-project --prefer-dist cakephp/app:~4.0 basic-content-service
 
-This should run without issue in Linux or ubuntu. In windows, you will need to make sure that your version of php matches up. In those cases, run the following.
+This should run without issue in Linux or ubuntu. In windows, you will need to make sure that your version of php matches up. In those cases, run the following to see if this is the only thing. You are still going to need to update the version and try again.
 composer create-project --ignore-platform-req=php --prefer-dist cakephp/app:~4.0 basic-content-service 
 
 ### In config/app_local.php

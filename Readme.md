@@ -20,6 +20,9 @@ extension=fileinfo
 extension=mysqli 
 extension=pdo_mysql
 extension=intl
+extension=pdo_sqlite
+extension=sqlite3
+
 and
 set allow_url_include = On 
 
@@ -48,6 +51,7 @@ sudo apt install php-mysql
 sudo apt install php-dom
 sudo apt install php-intl
 sudo apt install php-mbstring
+sudo apt install php8.3-sqlite3
 
 sudo systemctl restart apache2.service 
 

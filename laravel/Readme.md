@@ -1,18 +1,24 @@
 
 ### laravel
+#### (If you don't have php and composer installed)
 https://laravel.com/docs/12.x/installation#installing-php
-#### Linux
+##### Linux
 /bin/bash -c "$(curl -fsSL https://php.new/install/linux/8.4)"
-#### Mac
+##### Mac
 /bin/bash -c "$(curl -fsSL https://php.new/install/mac/8.4)"
-#### Windows
+##### Windows
 --This doesn't work due to some dependencies. Use the wsl and linux install.
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://php.new/install/windows/8.4'))
 
 #### (If you already have php and composer installed)
 composer global require laravel/installer
+
+For windows 
 Add C:\Users\david\AppData\Roaming\Composer\vendor\bin 
-or watever bin resulted from the prior script to the user path
+For Ubuntu
+Add /home/david/.config/composer/vendor/bin
+or 
+watever bin resulted from the prior script to the user path
 Restart VSCode to reload path
 
 

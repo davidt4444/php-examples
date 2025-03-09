@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Str;
-$github_base = "/mnt/c/Users/david/Documents/github";
+$github_base = "C:/Users/david/Documents/github";
 $password = file_get_contents($github_base."/aws-resources/localhost-laravel-prod.txt");
 return [
 
@@ -66,7 +66,7 @@ return [
         'mariadb' => [
             'driver' => 'mariadb',
             'url' => env('DB_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'localhost'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'phpbase'),
             'username' => env('DB_USERNAME', 'root'),

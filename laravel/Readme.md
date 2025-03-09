@@ -96,7 +96,7 @@ and put the following in for the mariadb option
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'phpbase'),
+            'database' => env('DB_DATABASE', 'laravel'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', $password),
             'unix_socket' => env('DB_SOCKET', ''),
@@ -114,7 +114,6 @@ and put the following in for the mariadb option
 
 php artisan migrate
 php artisan serve --port=8080
-
 
 
 ##### stuff to do to communicate w/ windows mariadb from wsl (Just use mariadb on wsl)
